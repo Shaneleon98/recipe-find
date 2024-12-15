@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 11px;
+    font-size: 23px;
+}
+
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: lightskyblue;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(28, 90, 237);
+    display: flex;
+    align-items: center;
+}
+
+.container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* .nav_list{
+    display: none;
+} */
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin-right: 20px;
+    font-weight: 550;
+    color: white;
+}
+
+.logo, h1{
+    font-size: 24px;
+    color: whitesmoke;
+}
+
+.category{
+    width: 600px;
+    height: 200px;
+    /* background-color: saddlebrown; */
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    margin-top: 33px;
+}
+
+.category .dishes{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    margin: auto;
+    transition: all 1s ease;
+}
+
+.dishes input{
+    width: 150px;
+    height: 34px;
+    background-color: blue;
+    color: white;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 22px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.dishes input:hover{
+    background-color: grey;
+    color: black;
+}
+
+.category button{
+    position: relative;
+    top: 48px;
+    background-color: transparent;
+    font-size: 23px;
+    border: none;
+    color: #fff;
+    font-size: 27px;
+    cursor: pointer;
+
+}
+
+.recipe{
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0 5px 10px rgba(78,73,73,0.1), -5px -5px 10px rgba(34,34,34,0.5);
+    cursor: pointer;
+    max-width: 350px;
+    border-radius: 20px; 
+    max-width: 350px;
+    transition: transform 0.3s ease-in-out;  
+}
+
+
+
+.show_meal{
+    text-align: center;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-gap: 40px;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+    place-items: center;
+}
+
+
+#previous_btn{
+    padding: 11px;
+    color: black;
+}
+
+#next_btn{
+    margin-left: 88%;
+    color: black;
+}
+
+/* recipe details  */
